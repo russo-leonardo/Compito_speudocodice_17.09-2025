@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codice in JavaScript</title>
+</head>
+<body>
+
+    <h2>Input Temperatura in Celsius:</h2>
+    <input type="number" id="tempCelsius" placeholder="Inserisci temperatura in Celsius">
+    <button onclick="convertiTemperatura()">Converti</button>
+
+    <script>
+        // Primo blocco
+        let a = parseInt(prompt("Dimmi la base: "));
+        let b = parseInt(prompt("Dimmi la base: "));
+        a = a + b;
+        console.log(a);
+
+        // Secondo blocco
+        a = 5;  // numero diverso da zero
+        b = 10; // numero diverso da zero
+        let c, d;
+        c = a;
+        d = b;
+        c = b;
+        d = a;
+
+        // Conversione da Celsius a Kelvin
+        function convertiTemperatura() {
+            let x = parseFloat(document.getElementById("tempCelsius").value);
+            let f = 273.15;
+            let z = x * f;
+            console.log("Temperatura in Kelvin: " + z);
+        }
+
+        // Terzo blocco
+        a = 3;
+        b = 4;
+        c = 5;
+
+        if (a > b && c > a) {
+            console.log(a);
+        }
+
+        if (b > a && b < c) {
+            console.log(b);
+        }
+    </script>
+
+</body>
+</html>
